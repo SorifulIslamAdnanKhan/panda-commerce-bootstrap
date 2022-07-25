@@ -18,7 +18,7 @@
   <!-- Header Area Start -->
   <header class="container">
     <!-- Navigation Menu Start-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
       <div class="container">
         <a class="navbar-brand" href="#"><img class="img-fulid" src="images/logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -31,13 +31,13 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Shoes</a>
+              <a class="nav-link" href="#shoes">Shoes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Backpack</a>
+              <a class="nav-link" href="#backpack" tabindex="-1" aria-disabled="true">Backpack</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Subscribe</a>
+              <a class="nav-link" href="#subscribe" tabindex="-1" aria-disabled="true">Subscribe</a>
             </li>
           </ul>
         </div>
@@ -46,7 +46,7 @@
     <!-- Navigation Menu End-->
 
     <!-- Slider Start-->
-    <section class="mt-5">
+    <section class="main-slider mt-5">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active border rounded p-5">
@@ -56,7 +56,7 @@
                   <h2>Cool Dude Headphone</h2>
                   <p>This is the best headphone in the world for people who just want to waste time in front of funky world.</p>
                   <h3>$420</h3>
-                  <button class="btn btn-warning">Buy Now</button>
+                  <button class="btn btn-buy-now">Buy Now</button>
                 </div>
               </div>
               <div class="col-lg-5">
@@ -71,7 +71,7 @@
                   <h2>X-Box for your living room</h2>
                   <p>This is the best x-box in the world for people who just want to waste time in front of fake sports.</p>
                   <h3>$600</h3>
-                  <button class="btn btn-warning">Buy Now</button>
+                  <button class="btn btn-buy-now">Buy Now</button>
                 </div>
               </div>
               <div class="col-lg-5">
@@ -86,7 +86,7 @@
                   <h2>Mega LCD TV For Sports</h2>
                   <p>This is the best tv in the world for people who just want to waste time in front of tv.</p>
                   <h3>$1200</h3>
-                  <button class="btn btn-warning">Buy Now</button>
+                  <button class="btn btn-buy-now">Buy Now</button>
                 </div>
               </div>
               <div class="col-lg-5">
@@ -137,7 +137,7 @@
     <!-- Category Area End -->
 
     <!-- Shoes Area Start -->
-    <section class="container my-5">
+    <section class="container my-5" id="shoes">
       <h2 class="my-5">Shoes</h2>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         <div class="col">
@@ -149,7 +149,7 @@
             </div>
             <div class="m-3">
               <h3>$120</h3>
-              <button class="btn btn-warning">Buy Now</button>
+              <button class="btn btn-buy-now">Buy Now</button>
             </div>
           </div>
         </div>
@@ -162,7 +162,7 @@
             </div>
             <div class="m-3">
               <h3>$150</h3>
-              <button class="btn btn-warning">Buy Now</button>
+              <button class="btn btn-buy-now">Buy Now</button>
             </div>
           </div>
         </div>
@@ -175,7 +175,7 @@
             </div>
             <div class="m-3">
               <h3>$180</h3>
-              <button class="btn btn-warning">Buy Now</button>
+              <button class="btn btn-buy-now">Buy Now</button>
             </div>
           </div>
         </div>
@@ -184,7 +184,7 @@
     <!-- Shoes Area End -->
 
     <!-- Backpacks Area Start -->
-    <section class="container my-5">
+    <section class="container my-5" id="backpack">
       <h2 class="my-5">Backpacks</h2>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         <div class="col">
@@ -196,7 +196,7 @@
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional.</p>
             </div>
             <div class="m-3">
-              <button class="btn btn-warning">Buy Now</button>
+              <button class="btn btn-buy-now">Buy Now</button>
             </div>
           </div>
         </div>
@@ -209,7 +209,7 @@
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional.</p>
             </div>
             <div class="m-3">
-              <button class="btn btn-warning">Buy Now</button>
+              <button class="btn btn-buy-now">Buy Now</button>
             </div>
           </div>
         </div>
@@ -222,15 +222,34 @@
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional.</p>
             </div>
             <div class="m-3">
-              <button class="btn btn-warning">Buy Now</button>
+              <button class="btn btn-buy-now">Buy Now</button>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Backpacks Area End -->
-  </main>
 
+    <!-- Subscribe Area Start -->
+    <section class="container subscribe d-flex justify-content-center align-items-center rounded-3" id="subscribe">
+      <div>
+        <h2>LET'S STAY IN TOUCH</h2>
+        <p>Get updates on sales, specials and more</p>
+        <form>
+          <div class="mb-3">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <button type="submit" class="btn btn-buy-now">Submit</button>
+        </form>
+      </div>
+    </section>
+    <!-- Subscribe Area End -->
+  </main>
+  <!-- Footer Area Start -->
+  <footer class="mt-5 text-center">
+    <p><small>©2022. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
+  </footer>
+  <!-- Footer Area End -->
 
   
 
